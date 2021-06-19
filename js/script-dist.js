@@ -1,0 +1,1 @@
+"use strict";var menuHam=document.querySelector(".header--hamburguer"),menu=document.querySelector(".menu--header");menuHam.addEventListener("click",(function(){menu.classList.toggle("active"),menu.classList.contains("active")?menuHam.setAttribute("src","images/IconClose.svg"):menuHam.setAttribute("src","images/icon-hamburger.svg")}));

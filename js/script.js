@@ -3,9 +3,7 @@ const menu = document.querySelector('.menu--header')
 
 menuHam.addEventListener('click',()=>{
   menu.classList.toggle('active')
-  if(menu.classList.contains('active')){
-    menuHam.src = 'images/IconClose.svg'
-  }else{
-    menuHam.src = 'images/icon-hamburger.svg'
-  }
+  menu.classList.contains('active')
+  ? menuHam.setAttribute('src','images/IconClose.svg')
+  :menuHam.setAttribute('src','images/icon-hamburger.svg')
 })
