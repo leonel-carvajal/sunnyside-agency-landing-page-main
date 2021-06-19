@@ -249,6 +249,9 @@ body::-webkit-scrollbar-thumb{
   .div .grid-info:first-child{
     align-self: flex-end;
   }
+  .content-img{
+    line-height: 0;
+  }
   
 }
 
