@@ -41,9 +41,8 @@ body::-webkit-scrollbar-thumb{
   background-repeat: no-repeat;
   background-position: 60% 0;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .header{
-    height: 500px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -59,14 +58,19 @@ body::-webkit-scrollbar-thumb{
   font-size: 2.5rem;
   font-weight: 900;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .header--title{
     grid-row: 2/-1;
     grid-column: span 3;
     align-self: flex-start;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 900;
+  }
+  @media screen and (min-width:1024px) {
+    .header--title{
+      font-size: 4rem;
+    }
   }
 }
 .header--img,
@@ -74,7 +78,7 @@ body::-webkit-scrollbar-thumb{
   position: absolute;
   top: 20px;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .header--hamburguer{
     display: none;
   }
@@ -99,7 +103,7 @@ body::-webkit-scrollbar-thumb{
   transform: scale(0);
   transition: transform 0.3s;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .menu--header{
     transform: scale(1);
     background-color: transparent;
@@ -125,7 +129,7 @@ body::-webkit-scrollbar-thumb{
   border-bottom: 15px solid var(--White);
   transform: rotateY(145deg);
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .menu--header::after{
     display: none;
   }
@@ -140,7 +144,7 @@ body::-webkit-scrollbar-thumb{
   justify-content: space-evenly;
   align-items: center;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .menu{
     height: auto;
     margin-top: 25px;
@@ -152,7 +156,7 @@ body::-webkit-scrollbar-thumb{
   text-decoration: none;
   color: var(--Dark-grayish-blue);
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .menu--link{
     cursor: pointer;
     color: var(--White);
@@ -167,7 +171,7 @@ body::-webkit-scrollbar-thumb{
   padding: 0.6em;
   border-radius: 15px;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .menu--item:last-child{
     background-color: var(--White);
     transform: translateY(-10px);
@@ -183,7 +187,6 @@ body::-webkit-scrollbar-thumb{
   color:var(--black);
 }
 .content{
-  /* display: grid; */
   font-family: 'Fraunces',sans-serif;
 }
 
@@ -210,7 +213,7 @@ body::-webkit-scrollbar-thumb{
   transform: translateY(150%);
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .content-grid:first-child{
     display: grid;
     gap: 0;
@@ -234,7 +237,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 0;
   }
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .div{
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -282,7 +285,7 @@ body::-webkit-scrollbar-thumb{
   color: var(--Very-dark-desaturated-blue);
   font-weight: 900;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .testimonials{
     margin-top: 10%;
   }
@@ -333,9 +336,9 @@ body::-webkit-scrollbar-thumb{
 .card--work{
   color: var(--Dark-grayish-blue);
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .testimonials{
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
@@ -354,13 +357,18 @@ body::-webkit-scrollbar-thumb{
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width:1024px) {
+  .testimonials{
+    width: 90%;
+  }
+}
 .images{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
   gap: 0;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .images{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr;
@@ -400,7 +408,7 @@ body::-webkit-scrollbar-thumb{
   justify-content: space-evenly;
   align-items: center;
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .footer-menu,
   .footer-social{
     justify-content: center;
