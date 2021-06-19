@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb{
   height: 300px;
   position: relative;
   background-image: 
-  url("/images/desktop/image-header.jpg") ;
+  url("../images/desktop/image-header.jpg") ;
   background-size: 150%;
   background-repeat: no-repeat;
   background-position: 60% 0;
@@ -197,14 +197,14 @@ body::-webkit-scrollbar-thumb{
 .div .content-grid:last-child{
   margin-top: 50px;
   height: 400px;
-  background-image: url(/images/mobile/image-graphic-design.jpg);
+  background-image: url("../images/mobile/image-graphic-design.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 10% 0%;
 }
 .div .content-grid:last-child{
   margin-top: 0;
-  background-image: url(/images/mobile/image-photography.jpg)
+  background-image: url("../images/mobile/image-photography.jpg")
 }
 .div .title-one{
   margin: 0;
