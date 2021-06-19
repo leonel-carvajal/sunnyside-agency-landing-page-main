@@ -21,3 +21,67 @@ body{
   font-weight: 700;
   font-size: 18px;
 }
+.header{
+  height: 300px;
+  position: relative;
+  background-image: 
+  url('/images/desktop/image-header.jpg') ;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: 60% 0;
+}
+.header--title{
+  width: 60%;
+  margin: 0 auto;
+  transform: translateY(75%);
+  color: var(--White);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.header--img,
+.header--hamburguer{
+  position: absolute;
+  top: 20px;
+}
+.header--img{
+  left: 10px;
+}
+.header--hamburguer{
+  right: 5%;
+}
+.menu--header{
+  height: 175px;
+  background-color: var(--White);
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.menu--header::after{
+  content: '';
+  position: absolute;
+  top: -14%;
+  right: -1%;
+  width: 0;
+  height: 0;
+  border-right: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-left: 15px solid var(--White);
+  border-bottom: 15px solid var(--White);
+  transform: rotateY(145deg);
+}
+.menu{
+  height: 100%;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu--link{
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
+}
