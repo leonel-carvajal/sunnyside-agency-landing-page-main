@@ -14,6 +14,7 @@
 --Dark-grayish-blue: hsl(232, 10%, 55%);
 --Grayish-blue: hsl(210, 4%, 67%);
 --White: hsl(0, 0%, 100%);
+--black:hsl(0, 0%, 0%);
 }
 
 body{
@@ -46,23 +47,31 @@ body{
 .header--img{
   left: 10px;
 }
+
 .header--hamburguer{
   right: 5%;
 }
+
+
 .menu--header{
   height: 175px;
   background-color: var(--White);
   position: relative;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+.active{
+  transform: scale(1);
 }
 .menu--header::after{
   content: '';
   position: absolute;
   top: -14%;
-  right: -1%;
+  right:-1%;
   width: 0;
   height: 0;
   border-right: 15px solid transparent;
@@ -84,4 +93,14 @@ body{
 .menu--link{
   text-decoration: none;
   color: var(--Dark-grayish-blue);
+}
+
+.menu--item:last-child{
+  background-color: var(--Yellow);
+  padding: 0.6em;
+  border-radius: 15px;
+}
+
+.menu--item:last-child > .menu--link{
+  color:var(--black);
 }
